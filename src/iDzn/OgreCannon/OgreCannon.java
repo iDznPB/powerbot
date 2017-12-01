@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-@Script.Manifest(name= "iDzn/OgreCannon", description="Reloads cannon at the Combat Training Camp ogres, includes different looting types", properties="client=4; author=iDzn; topic=1340538;")
+@Script.Manifest(name= "OgreCannon", description="Reloads cannon at the Combat Training Camp ogres, includes different looting types", properties="client=4; author=iDzn; topic=1340538;")
 
 public class OgreCannon extends PollingScript<ClientContext> implements PaintListener {
 
