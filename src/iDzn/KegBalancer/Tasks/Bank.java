@@ -1,13 +1,13 @@
-package iDzn.OldschoolRS.Tasks;
+package iDzn.KegBalancer.Tasks;
 
-import iDzn.OldschoolRS.Task;
+import iDzn.KegBalancer.Task;
 import org.powerbot.script.Condition;
 import org.powerbot.script.rt4.ClientContext;
 
 import java.util.concurrent.Callable;
 
 public class Bank extends Task {
-
+    private static int FOOD []= {361, 1891, 1893, 1895, 379, 373, 7946, 385};
 
     public Bank(ClientContext ctx) {
         super(ctx);
@@ -15,8 +15,8 @@ public class Bank extends Task {
 
     @Override
     public boolean activate() {
-        return ctx.inventory.select().id(13653, 5074).count() == 0
-                && ctx.bank.nearest().tile().distanceTo(ctx.players.local()) < 6;
+        return ctx.inventory.select().count()<28
+                && ctx.bank.nearest().tile().distanceTo(ctx.players.local()) <4;
     }
 
     @Override
@@ -51,3 +51,5 @@ public class Bank extends Task {
 
     }
 }
+
+

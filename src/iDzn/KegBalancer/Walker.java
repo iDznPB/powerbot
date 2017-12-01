@@ -1,12 +1,12 @@
-package iDzn.OldschoolRS;
+package iDzn.KegBalancer;
 
 import org.powerbot.script.Condition;
-import org.powerbot.script.Random;
-import org.powerbot.script.Tile;
-import org.powerbot.script.rt4.*;
+        import org.powerbot.script.Random;
+        import org.powerbot.script.Tile;
+        import org.powerbot.script.rt4.*;
 
-import java.util.concurrent.Callable;
-import java.util.regex.Pattern;
+        import java.util.concurrent.Callable;
+        import java.util.regex.Pattern;
 
 /**
  * Created by Chris on 05/01/2016.
