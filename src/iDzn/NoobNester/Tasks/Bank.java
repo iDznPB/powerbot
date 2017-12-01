@@ -1,6 +1,6 @@
-package iDzn.OldschoolRS.Tasks;
+package iDzn.NoobNester.Tasks;
 
-import iDzn.OldschoolRS.Task;
+import iDzn.NoobNester.Task;
 import org.powerbot.script.Condition;
 import org.powerbot.script.rt4.ClientContext;
 

@@ -1,4 +1,4 @@
-package iDzn.OldschoolRS.OgreCannon;
+package iDzn.OgreCannon;
 
 
 import org.powerbot.script.rt4.ClientAccessor;

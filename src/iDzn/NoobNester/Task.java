@@ -1,4 +1,4 @@
-package iDzn.OldschoolRS;
+package iDzn.NoobNester;
 
 
 import org.powerbot.script.rt4.ClientAccessor;

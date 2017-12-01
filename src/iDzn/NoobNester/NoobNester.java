@@ -1,9 +1,12 @@
-package iDzn.OldschoolRS.NoobNester;
+package iDzn.NoobNester;
 
-import iDzn.OldschoolRS.Task;
-import iDzn.OldschoolRS.Tasks.*;
-import org.powerbot.script.*;
+import iDzn.NoobNester.Tasks.*;
+import org.powerbot.script.GeItem;
+import org.powerbot.script.PaintListener;
+import org.powerbot.script.PollingScript;
+import org.powerbot.script.Script;
 import org.powerbot.script.rt4.ClientContext;
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
@@ -11,7 +14,10 @@ import java.util.List;
 
 
 
-@Script.Manifest(name="NoobNester", description="Empties nets of seeds and jewellery.", properties=“client=4; author=iDzn; topic=1340464;")
+
+
+@Script.Manifest(name= "NoobNester", description="Empties nets of seeds and jewellery.", properties="client=4; author=iDzn; topic=1340464;")
+
 
 public class NoobNester extends PollingScript<ClientContext> implements PaintListener {
 
@@ -113,7 +119,7 @@ public class NoobNester extends PollingScript<ClientContext> implements PaintLis
 
 
         String userOptions[] = {"Ring Nests", "Seed Nests"};
-        String userChoice = "" + (String) JOptionPane.showInputDialog(null, "Seed Nests or Ring Nests?", "NoobNester", JOptionPane.PLAIN_MESSAGE, null, userOptions, userOptions[1]);
+        String userChoice = "" + (String) JOptionPane.showInputDialog(null, "Seed Nests or Ring Nests?", "iDzn/NoobNester", JOptionPane.PLAIN_MESSAGE, null, userOptions, userOptions[1]);
 
         if (userChoice.equals("Seed Nests")) {
             taskList.add(new Bank(ctx));
