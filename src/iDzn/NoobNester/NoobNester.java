@@ -16,7 +16,7 @@ import java.util.List;
 
 
 
-@Script.Manifest(name= "iDzn/NoobNester", description="Empties nets of seeds and jewellery.", properties="client=4; author=iDzn; topic=1340464;")
+@Script.Manifest(name= "NoobNester", description="Empties nets of seeds and jewellery.", properties="client=4; author=iDzn; topic=1340464;")
 
 
 public class NoobNester extends PollingScript<ClientContext> implements PaintListener {
